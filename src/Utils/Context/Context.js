@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import InvokeAPI from "../Apicall/Apicall";
 
-
 // @ts-ignore
 const AppContext = React.createContext();
 
@@ -22,6 +21,8 @@ const AppProvider = ({ children }) => {
   const [expand, setExpand] = useState(true);
   const [order, setOrder] = useState(null);
   const [error, setError] = useState(null);
+  const [news, setNews] = useState(null);
+  const [singleNews, setSingleNews] = useState(null);
 
   const onclickOpenImageLightBox = (id) => {
     setloading(true);
@@ -34,7 +35,57 @@ const AppProvider = ({ children }) => {
     client_id: "i5Kt1JQq4jZRXZeB2oO8D3J8avpZ_Xgy3ShUlYFNHh4",
   };
 
- 
+  let apiGetparam = () => {
+    let params = {
+      q: "today",
+      from: "",
+      to: "",
+      page: "",
+      page_size: "",
+      sort_by: "",
+      to_rank: "",
+      from_rank: "",
+      ranked_only: "",
+      not_sources: "",
+      sources: "",
+      topic: "",
+      countries: "",
+      search_in: "",
+      lang: "",
+    };
+    return params;
+  };
+  let params = {
+    q: "today",
+    from: "",
+    to: "",
+    page: "",
+    page_size: "",
+    sort_by: "",
+    to_rank: "",
+    from_rank: "",
+    ranked_only: "",
+    not_sources: "",
+    sources: "",
+    topic: "",
+    countries: "",
+    search_in: "",
+    lang: "",
+  }
+  Object.keys(params).forEach(
+    (key) =>
+      (params[key] === "" || params[key] == null || params[key] === undefined) &&
+      delete params[key]
+  );
+
+  const GetNews = async () => {
+    let res = await InvokeAPI("search", "get", "", "", params);
+    console.log(res);
+  };
+
+  // useEffect(() => {
+  //   apiCall();
+  // }, []);
 
   const openSidebar = () => {
     setisSidebar(true);
@@ -66,11 +117,15 @@ const AppProvider = ({ children }) => {
         setisSidebar,
         images,
         orientation,
-        setOrientation,error, setError,
-        setkeyword,color, setColor,
+        setOrientation,
+        error,
+        setError,
+        setkeyword,
+        color,
+        setColor,
         calculateDiscount,
         onclickOpenImageLightBox,
- 
+
         realted,
         setRealted,
 

@@ -14,12 +14,12 @@ const InvokeAPI = async (
   
 
 
-  const baseURL = process.env.REACT_APP_API_URL;
-  const token = process.env.REACT_APP_API_TOKEN;
+  const baseURL = process.env.REACT_APP_API_UR;
+  const key = process.env.REACT_APP_APIKEY;
   const option = {
     method: type,
     url: baseURL + endpoint,
-    headers: { Authorization: `bearer ${token}` },
+    headers: { "x-api-key": `${key}` },
     params: queryParam,
     data: body,
   };
