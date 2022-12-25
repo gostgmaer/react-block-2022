@@ -26,7 +26,7 @@ const Navigation = () => {
             <Route path='/posts/:category/:name' element={<Posts></Posts>} ></Route>
             <Route path='/posts/:tags/:name' element={<Posts></Posts>} ></Route>
             <Route path='/posts' element={<Posts></Posts>} ></Route>
-            <Route path='/post/:title' element={<Post></Post>} ></Route>
+            <Route path='/post/:id' element={<Post></Post>} ></Route>
             <Route path='*' element={<Error></Error>} ></Route>
         </Routes>
     </React.Fragment>

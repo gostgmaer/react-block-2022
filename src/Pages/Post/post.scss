@@ -1,0 +1,153 @@
+.Post {
+  .postWrapper {
+    .article {
+      .top {
+        position: relative;
+        height: calc(100vh - 102px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        color: white;
+        .image {
+          width: 100%;
+          background-color: black;
+          img {
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+
+            height: calc(100vh - 102px);
+          }
+        }
+        .title {
+          position: absolute;
+          top: 40%;
+          left: 0;
+          right: 0;
+          text-align: center;
+          h1 {
+            font-size: 20px;
+          }
+        }
+        .meta {
+          justify-content: center;
+          position: absolute;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          top: 50%;
+          left: 0;
+          right: 0;
+        }
+      }
+
+      .details {
+        margin: 20px;
+        padding: 5% 18%;
+      }
+    }
+    .coomentsSection {
+      .commentForm {
+        .CommentBox {
+          display: block;
+          // vertical-align: middle;
+          margin: auto;
+          width: 772px;
+          h3 {
+            font-size: 20px;
+          }
+          p {
+          }
+
+          .forms {
+            width: 100%;
+            .topfields {
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              // justify-content: ;
+              margin: 20px 0;
+            }
+            input {
+              height: 20px;
+              padding: 5px 5px;
+              &::placeholder {
+                text-transform: capitalize;
+              }
+            }
+            .col {
+              flex: 1;
+            }
+            textarea {
+              padding: 15px;
+              &::placeholder {
+                font-size: 16px;
+              }
+            }
+            .col-lg {
+              width: 100%;
+              //  padding: 5px 5px;
+              resize: vertical;
+              // --form-field-padding: 15px;
+            }
+            .checkbox {
+              display: flex;
+              align-items: center;
+              justify-content: start;
+              gap: 10px;
+            }
+            .btn-submit {
+              margin: 20px 0;
+              .btn {
+                background-color: rgb(230, 242, 252);
+                color: black;
+              }
+            }
+          }
+        }
+      }
+      .commentList {
+        .CommentListData {
+            display: block;
+            margin: auto;
+            width: 772px;
+          .comments {
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            li{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+                .user{
+                    display: flex;
+                    align-items: center; 
+                    justify-content: space-between;
+                    .username{
+                        display: flex;
+                        align-items: center; gap: 5px;
+                    }
+                    img{
+                        
+                    }
+
+                }
+                .content{
+                    p{
+
+                    }
+                    .like{
+
+                    }
+                }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

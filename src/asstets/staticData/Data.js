@@ -1,4 +1,7 @@
-export const Data = {
+import React from "react";
+import { MdFacebook } from "react-icons/md";
+
+export let Data = {
   newsList: {
     status: "ok",
     total_hits: 10000,
@@ -1246,4 +1249,178 @@ export const Data = {
       published_date_precision: null,
     },
   },
+  navItem: [{
+    "id": 1,
+    "texts": "Rubber",
+    "mega": [
+      {
+      },
+      {
+      },
+      {
+      },
+      {
+      },
+      {
+      },
+      {
+      }
+    ]
+  }, {
+    "id": 2,
+    "texts": "Plexiglass",
+    "mega": [
+      {
+      },
+      {
+      },
+      {
+      },
+      {
+      },
+      {
+      },
+      {
+      }
+    ]
+  }, {
+    "id": 3,
+    "texts": "Steel",
+    "mega": [
+      {
+      },
+      {
+      },
+      {
+      },
+      {
+      },
+      {
+      },
+      {
+      }
+    ]
+  }, {
+    "id": 4,
+    "texts": "Steel",
+    "mega": [
+      {
+      },
+      {
+      },
+      {
+      },
+      {
+      },
+      {
+      }
+    ]
+  }],
+  socialMedia:[{
+    "id": 1,
+    "url": "http://merriam-webster.com",
+    "text": "info",
+    "icon": <MdFacebook></MdFacebook>
+  }, {
+    "id": 2,
+    "url": "http://purevolume.com",
+    "text": "gov",
+    "icon": ''
+  }, {
+    "id": 3,
+    "url": "https://ask.com",
+    "text": "name",
+    "icon": "https://robohash.org/laborumautemnesciunt.png?size=50x50&set=set1"
+  }, {
+    "id": 4,
+    "url": "http://sphinn.com",
+    "text": "info",
+    "icon": "https://robohash.org/quisautaut.png?size=50x50&set=set1"
+  }, {
+    "id": 5,
+    "url": "http://guardian.co.uk",
+    "text": "gov",
+    "icon": "https://robohash.org/quimagnicumque.png?size=50x50&set=set1"
+  }, {
+    "id": 6,
+    "url": "https://bluehost.com",
+    "text": "net",
+    "icon": "https://robohash.org/totamadcorrupti.png?size=50x50&set=set1"
+  }, {
+    "id": 7,
+    "url": "http://prweb.com",
+    "text": "biz",
+    "icon": "https://robohash.org/voluptatibuseoslaudantium.png?size=50x50&set=set1"
+  }],
+  comments:[{
+    "id": 1,
+    "name": "Court Langabeer",
+    "avator": "https://robohash.org/idrationeet.png?size=50x50&set=set1",
+    "website": "https://netscape.com",
+    "comment": "Alveolar maxillary hyperplasia",
+    "email": "clangabeer0@mit.edu"
+  }, {
+    "id": 2,
+    "name": "Ginnifer Yeo",
+    "avator": "https://robohash.org/etnamqui.png?size=50x50&set=set1",
+    "website": "http://nationalgeographic.com",
+    "comment": "Open wound of external ear, unspecified site, complicated",
+    "email": "gyeo1@elpais.com"
+  }, {
+    "id": 3,
+    "name": "Emmy Parlett",
+    "avator": "https://robohash.org/utearumut.png?size=50x50&set=set1",
+    "website": "https://spiegel.de",
+    "comment": "Mycosis fungoides, unspecified site, extranodal and solid organ sites",
+    "email": "eparlett2@netscape.com"
+  }, {
+    "id": 4,
+    "name": "Sib Claremont",
+    "avator": "https://robohash.org/rationeestet.png?size=50x50&set=set1",
+    "website": "https://samsung.com",
+    "comment": "Unspecified lymphoid leukemia, in remission",
+    "email": "sclaremont3@oracle.com"
+  }, {
+    "id": 5,
+    "name": "Jacinta Koschek",
+    "avator": "https://robohash.org/sitrepudiandaeaccusantium.png?size=50x50&set=set1",
+    "website": "https://google.nl",
+    "comment": "Chondrocalcinosis, due to pyrophosphate crystals, hand",
+    "email": "jkoschek4@soup.io"
+  }, {
+    "id": 6,
+    "name": "Ad Edge",
+    "avator": "https://robohash.org/quolaudantiumvoluptatem.png?size=50x50&set=set1",
+    "website": "http://epa.gov",
+    "comment": "Laboratory examination ordered as part of a routine general medical examination",
+    "email": "aedge5@flavors.me"
+  }, {
+    "id": 7,
+    "name": "Yardley Samsworth",
+    "avator": "https://robohash.org/possimussintomnis.png?size=50x50&set=set1",
+    "website": "http://github.io",
+    "comment": "Injury to rectum, without mention of open wound into cavity",
+    "email": "ysamsworth6@psu.edu"
+  }, {
+    "id": 8,
+    "name": "Quinn Crook",
+    "avator": "https://robohash.org/estcupiditateet.png?size=50x50&set=set1",
+    "website": "https://deliciousdays.com",
+    "comment": "Band-shaped keratopathy",
+    "email": "qcrook7@google.cn"
+  }, {
+    "id": 9,
+    "name": "Gennie Jordine",
+    "avator": "https://robohash.org/abmodiaperiam.png?size=50x50&set=set1",
+    "website": "http://msn.com",
+    "comment": "Gender identity disorder in adolescents or adults",
+    "email": "gjordine8@google.fr"
+  }, {
+    "id": 10,
+    "name": "Jayne Dean",
+    "avator": "https://robohash.org/fugacupiditatequasi.png?size=50x50&set=set1",
+    "website": "http://cnbc.com",
+    "comment": "Unspecified disorder of choroid",
+    "email": "jdean9@posterous.com"
+  }]
 };
