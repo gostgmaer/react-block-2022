@@ -1,0 +1,15 @@
+
+.Home{
+    background-color: rgb(245, 245, 245);
+    height: 100%;
+    .homeWrapper{
+        .blogCardList {
+            margin: 20px ;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            flex-wrap: wrap;
+          }
+
+    }
+}

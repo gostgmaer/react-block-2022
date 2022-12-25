@@ -99,4 +99,27 @@ mark {
 }
 a {
   transition: var(--transition);
+  text-decoration: none;
+  color: black;
+}
+
+.btn{
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+li{
+  cursor: pointer;
+}
+.important{
+  color: brown;
 }

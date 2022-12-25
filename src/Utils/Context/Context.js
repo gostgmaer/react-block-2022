@@ -23,6 +23,8 @@ const AppProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const [news, setNews] = useState(null);
   const [singleNews, setSingleNews] = useState(null);
+  const [postId, setPostId] = useState(null);
+  const [comment, setComment] = useState(null);
 
   const onclickOpenImageLightBox = (id) => {
     setloading(true);
@@ -114,7 +116,7 @@ const AppProvider = ({ children }) => {
         expand,
         setExpand,news, setNews,
         isSidebar,
-        setisSidebar,
+        setisSidebar,postId, setPostId,
         images,
         orientation,
         setOrientation,
@@ -127,7 +129,7 @@ const AppProvider = ({ children }) => {
         onclickOpenImageLightBox,
 
         realted,
-        setRealted,
+        setRealted,comment, setComment,
 
         loading,
         reqParam,

@@ -1,0 +1,58 @@
+.Header {
+    padding: 10px 50px 0 50px;
+    background-color: aliceblue;
+  .topbarWrapper {
+    background-color: #29333C;
+    margin: -10px -50px 0 -50px;
+    padding: 5px 50px;
+   
+    color: white;
+    .Topbar {
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      .left {
+        .Pages {
+        }
+      }
+      .right {
+        .socialMedia {
+            gap: 24px;
+            img{
+                width: 16px;
+                height: 16px;
+            }
+        }
+      }
+    }
+  }
+  .headerWrapper {
+    .headerContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        text-transform: uppercase;
+      .logo {
+        svg{
+           // width: 100px;
+        }
+      }
+      .navigation {
+        .navitems {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            font-size: 12px;
+            font-weight: 500;
+          .navlink {
+          }
+          .btn {
+          }
+        }
+      }
+    }
+  }
+}
