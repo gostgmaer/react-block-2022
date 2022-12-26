@@ -14,22 +14,22 @@ const Postcard = ({ item }) => {
   return (
     <div className="Postcard">
       <div className="postCardWrapper">
-        <div class="tagList">
+        <div className="tagList">
           <ul>
             <li>{item.topic}</li>
           </ul>
         </div>
-        <div  class="title">
+        <div  className="title">
           <Link  to={`/post/${item._id}`}>
             {item.title.substring(0, 32)}...
           </Link>
         </div>
-        <div class="imageBlock">
+        <div className="imageBlock">
           <Link to={`/post/${item.title.replace(/\s+/g, "-").toLowerCase()}`}>
             <img src={item.media} alt="" />
           </Link>
         </div>
-        <div class="summery">
+        <div className="summery">
           <p>
             {isShowMore ? item.excerpt : `${item.excerpt.substring(0, 55)}...`}{" "}
             <span onClick={() => setIsShowMore(!isShowMore)}>
@@ -37,7 +37,7 @@ const Postcard = ({ item }) => {
             </span>{" "}
           </p>
         </div>
-        <div class="metaData">
+        <div className="metaData">
           <span>{item.author.toUpperCase()}</span>/
           <span className="date">
             {moment(item.published_date).format("MMMM Do YYYY")}

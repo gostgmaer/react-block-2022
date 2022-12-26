@@ -11,7 +11,7 @@ const CommentList = () => {
             <li key={item.id}>
               <div className="user"><div className="username"><img src={item.avator} width={30} height={30} alt="" /> <span>{item.name}</span></div>  <div className="like"><MdFavorite></MdFavorite> <MdThumbUp></MdThumbUp></div></div>
               <div className="content">
-                <p>{item.text}</p>
+                <p>{item.comment}</p>
                
               </div>
             </li>
